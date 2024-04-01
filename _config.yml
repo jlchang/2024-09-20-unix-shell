@@ -5,7 +5,7 @@
 # More detailed instructions are available at:
 # https://carpentries.github.io/workshop-template/customization/index.html
 
-# Which carpentry is this ("swc", "dc", "lc", or "cp")?
+# Which carpentry is this ("swc", "dc", "lc", or "cp")? Adding "cb" for custom Broad content.
 # swc: Software Carpentry
 #  dc: Data Carpentry
 #  lc: Library Carpentry
@@ -18,7 +18,7 @@
 # When setting this field to "incubator", please uncomment the
 # incubator_lesson_site, incubator_pre_survey, and incubator_post_survey
 # lines further down this file and add the URL to the relevant lesson site.
-carpentry: "lc"
+carpentry: "cb"
 
 # This option is currently only needed for
 # Data Carpentry and Software Carpentry workshops.
