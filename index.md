@@ -90,11 +90,7 @@ Edit the general explanatory paragraph below if you want to change
 the pitch.
 {% endcomment %}
 <p>
-The Computing Basics series uses content from the Carpentries project to teach basic computing skills to interested members of the Broad community. <strong><a href="https://carpentries.org">The Carpentries</a></strong> project comprises the <a
-href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data Carpentry</a>, and
-<a href="{{site.lc_site}}">Library Carpentry</a> communities of Instructors, Trainers, Maintainers,
-helpers, and supporters who share a mission to teach foundational computational and data science
-skills to researchers.
+The <strong>Computing Basics series</strong> uses content from <strong><a href="https://carpentries.org">the Carpentries</a></strong> project to teach basic computing skills to interested members of the Broad community. The Carpentries mission is to teach foundational computational and data science skills to researchers.
 
 
 {% if site.pilot %}
