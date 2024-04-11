@@ -60,13 +60,13 @@ title: "The Unix Shell (pilot)"
 # in The Carpentries Incubator).
 #
 # For an Incubator workshop, uncomment the line below and add the URL of the lesson site.
-# incubator_lesson_site: "https://github.com/jlchang/lc-shell-pilot"
+incubator_lesson_site: "https://github.com/jlchang/lc-shell-pilot"
 #
 # For an Incubator workshop, uncomment the line below and add the URL of your pre-workshop survey
-# incubator_pre_survey: "https://docs.google.com/forms/d/e/1FAIpQLSeZJnHBVCOR-HzmSc99KWL7Ljrf4Dof01ARHe_kwNnRGJhYUw/viewform"
+incubator_pre_survey: "https://docs.google.com/forms/d/e/1FAIpQLSeZJnHBVCOR-HzmSc99KWL7Ljrf4Dof01ARHe_kwNnRGJhYUw/viewform"
 #
 # For an Incubator workshop, uncomment the line below and add the URL of your post-workshop survey
-# incubator_post_survey: "https://docs.google.com/forms/d/e/1FAIpQLSfgvuKyKFrL0fbw5ErpSALdR1r8xHlHJtJWUtUck8JJrkfiRA/viewform"
+incubator_post_survey: "https://docs.google.com/forms/d/e/1FAIpQLSfgvuKyKFrL0fbw5ErpSALdR1r8xHlHJtJWUtUck8JJrkfiRA/viewform"
 #
 #------------------------------------------------------------
 
