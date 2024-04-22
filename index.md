@@ -244,7 +244,7 @@ Display the contact email address set in the configuration file.
 <p id="roles">
   <strong>Roles:</strong>
   To learn more about the roles at the workshop (who will be doing what),
-  refer to <a href="https://carpentries.org/workshop_faq/#what-are-the-roles-of-everyone-participating-in-a-workshop">our Workshop FAQ</a>.
+  refer to the Carpentries <a href="https://carpentries.org/workshop_faq/#what-are-the-roles-of-everyone-participating-in-a-workshop">Workshop FAQ</a>.
 </p>
 
 {% comment %}
@@ -280,7 +280,7 @@ Edit the text to match who can attend the workshop. For instance:
   {% else %}
   to-be-announced
   {% endif %}
-  for more information.
+  for more information. A larger workshop is planned for Friday June 21, 2024 from 11:30a- 1:30p.
 </p>
 
 
@@ -386,7 +386,7 @@ The lesson taught in this workshop is being piloted and a precise schedule is ye
   ,
   {% endunless %}
   {% endif %}
-  <a href='mailto:{{email}}'>{the workshop organisers}</a>
+  <a href='mailto:{{email}}'>the workshop organisers</a>
   {% endfor %}
   {% else %}
   to-be-announced
@@ -455,7 +455,6 @@ during the workshop.
 {% elsif site.carpentry == "lc" %}
 {% include lc/setup.html %}
 {% elsif site.carpentry == "incubator" %}
-Please check the "Setup" section of
-<a href = "{{ site.incubator_lesson_site }}">the lesson homepage</a> for instructions to follow
-to obtain the software and data you will need to follow the lesson.
+Please check <a href = "https://jlchang.github.io/2024-05-09-Unix_Shell_pilot/#terminal-setup">the "Setup" section</a>
+of the lesson homepage for instructions to obtain the software and data you will need to follow the lesson.
 {% endif %}
