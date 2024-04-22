@@ -1,10 +1,9 @@
-# Session website for 2024-05-09 The Unix Shell (pilot)
+# 2024-05-09 The Unix Shell (pilot) session website github repo
+
+View the [session website][session-website].
 
 This repository is based on The Carpentries' ([Software Carpentry][swc-site], [Data Carpentry][dc-site], and
-[Library Carpentry][lc-site]'s) [template][template-link] for creating websites for workshops. This IS NOT the [session content][session-link] [github][session-github-link].
-
-View the [session website][session-website]
-
+[Library Carpentry][lc-site]'s) [template][template-link] for creating websites for workshops. This IS NOT the [session CONTENT][session-link] [github][session-github-link].
 
 1. **Please _do not fork this repository directly on GitHub._** Instead, please use GitHub's
    "template" function following [the instructions for][creating-a-repository] to copy the
@@ -17,9 +16,9 @@ The pages on [customizing your website][customization],
 the [FAQ][faq],
 and the [design notes][design] have more detail on how this template works and why.
 And please note:
-if you are teaching Git,
+if teaching Git,
 please [create a separate repository][setting-up-a-separate-repository-for-learners]
-for your learners to practice in.
+for learners to practice in.
 
 ## Video Tutorial
 
@@ -30,19 +29,20 @@ create a workshop website.
 ### Working locally
 
 > Note: you don't have to do this, if you have already updated your site using the web interface.
-> This may be more efficient if you are making interdependent changes in multiple files
-> (or create a branch using the web interface before making interdependent changes and merge to `gh-pages`)
+> This may be more efficient if you are making interdependent changes in multiple files so that
+> each file update does not trigger a separate website build job. (or, when using the web interface,
+> create a branch before making interdependent changes then merge to `gh-pages`)
 
 
-If you are already familiar with Git, you can clone the repository to your desktop, edit `index.md`,
-`_config.yml`, and `schedule.html` following the instruction above there, and push your changes back to the repository.
+If you are already familiar with Git, clone the repository to your desktop, edit `index.md`,
+`_config.yml`, and `schedule.html` following the [customization instructions][customization], and push your changes back to the repository.
 
 ```shell
 git clone https://github.com/your_username/YYYY-MM-DD-site
 ```
 
 In order to view your changes once you are done editing, if you have bundler installed (see the
-[installation instructions below][installing-software]), you can preview your site locally with:
+[installation instructions][installing-software]), you can preview your site locally with:
 
 ```shell
 make serve
@@ -57,8 +57,8 @@ make workshop-check
 ```
 
 Once you are satisfied with the edits to your site, commit and push the changes to your repository.
-A few minutes later, you can go to the GitHub Pages URL for your workshop site and preview it. In the example above, this is `https://gvwilson.github.io/2016-12-01-oomza`. [The finished
-page should look something like this](fig/completed-page.png?raw=true).
+A few minutes later, you can go to the GitHub Pages URL for your workshop site and preview it. An example might look like `https://gvwilson.github.io/2016-12-01-oomza`. 
+[The finished page should look something like this](fig/completed-page.png?raw=true).
 
 <!--links set up for this session-->
 [session-link]: https://jlchang.github.io/2024-05-09-Unix_Shell_pilot/
