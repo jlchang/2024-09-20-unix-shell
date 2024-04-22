@@ -29,17 +29,19 @@ create a workshop website.
 ### Working locally
 
 > Note: you don't have to do this, if you have already updated your site using the web interface.
-> This may be more efficient if you are making interdependent changes in multiple files so that
+> Working locally may be more efficient if you are making interdependent changes in multiple files so that
 > each file update does not trigger a separate website build job. (or, when using the web interface,
 > create a branch before making interdependent changes then merge to `gh-pages`)
 
 
-If you are already familiar with Git, clone the repository to your desktop, edit `index.md`,
-`_config.yml`, and `schedule.html` following the [customization instructions][customization], and push your changes back to the repository.
+If you are already familiar with Git, clone the repository to your desktop:
 
 ```shell
 git clone https://github.com/your_username/YYYY-MM-DD-site
 ```
+
+Then edit `index.md`,`_config.yml`, and `schedule.html` following the [customization instructions][customization], 
+and push your changes back to the repository.
 
 In order to view your changes once you are done editing, if you have bundler installed (see the
 [installation instructions][installing-software]), you can preview your site locally with:
@@ -57,7 +59,7 @@ make workshop-check
 ```
 
 Once you are satisfied with the edits to your site, commit and push the changes to your repository.
-A few minutes later, you can go to the GitHub Pages URL for your workshop site and preview it. An example might look like `https://gvwilson.github.io/2016-12-01-oomza`. 
+A few minutes later, you can go to the GitHub Pages URL for your workshop site and preview it. An example URL might look like `https://gvwilson.github.io/2016-12-01-oomza`. 
 [The finished page should look something like this](fig/completed-page.png?raw=true).
 
 <!--links set up for this session-->
