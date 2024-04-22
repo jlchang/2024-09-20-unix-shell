@@ -366,7 +366,7 @@ of code below the Schedule `<h2>` header below with
 {% include lc/schedule.html %}
 {% elsif site.carpentry == "incubator" %}
 This workshop is teaching a modified Carpentries lesson.
-Please check [the lesson homepage]({{ site.incubator_lesson_site }}) for a list of lesson sections and estimated timings.
+Please check <a href = "{{ site.incubator_lesson_site }}">the lesson homepage</a> for a list of lesson sections and estimated timings.
 {% endif %}
 
 {% comment %}
@@ -376,7 +376,21 @@ how one of these schedule tables is constructed.
 {% endcomment %}
 
 {% if site.pilot %}
-The lesson taught in this workshop is being piloted and a precise schedule is yet to be established. The workshop will include regular breaks. Please [contact the workshop organisers](#contact) if you would like more information about the planned schedule.
+The lesson taught in this workshop is being piloted and a precise schedule is yet to be established. The workshop will include regular breaks. Please contact 
+  {% if page.email %}
+  {% for email in page.email %}
+  {% if forloop.last and page.email.size > 1 %}
+  or
+  {% else %}
+  {% unless forloop.first %}
+  ,
+  {% endunless %}
+  {% endif %}
+  <a href='mailto:{{email}}'>{the workshop organisers}</a>
+  {% endfor %}
+  {% else %}
+  to-be-announced
+  {% endif %} if you would like more information about the planned schedule.
 {% endif %}
 
 <hr/>
@@ -441,7 +455,7 @@ during the workshop.
 {% elsif site.carpentry == "lc" %}
 {% include lc/setup.html %}
 {% elsif site.carpentry == "incubator" %}
-Please check the "Setup" page of
-[the lesson site]({{ site.incubator_lesson_site }}) for instructions to follow
+Please check the "Setup" section of
+<a href = "{{ site.incubator_lesson_site }}">the lesson homepage</a> for instructions to follow
 to obtain the software and data you will need to follow the lesson.
 {% endif %}
