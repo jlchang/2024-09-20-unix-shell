@@ -113,6 +113,8 @@ workshop is only open to people from a particular institution.
 {% include cb/who.html %}
 {% endif %}
 
+{% include cb/who.html %}
+
 {% comment %}
 LOCATION
 
@@ -202,8 +204,7 @@ special instructions.
   Materials will be provided in advance of the workshop and
   large-print handouts are available if needed by notifying the
   organizers in advance.  If we can help making learning easier for
-  you (e.g. sign-language interpreters, lactation facilities) please
-  get in touch (using contact details below) and we will
+  you please get in touch (using contact details below) and we will
   attempt to provide them.
 </p>
 {% else %}
@@ -280,7 +281,6 @@ Edit the text to match who can attend the workshop. For instance:
   to-be-announced
   {% endif %}
   for more information.
-  for more information
 </p>
 
 
