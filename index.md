@@ -31,10 +31,8 @@ double quotation marks around the value, unless specified otherwise.
 And run 'make workshop-check' *before* committing to make sure that changes are good.
 {% endcomment %}
 
-
 {% comment %}
 {% endcomment %}
-
 
 {% comment %}
 Check DC curriculum
@@ -80,7 +78,6 @@ displayed if the 'eventbrite' field in the header is not set.
 </iframe>
 {% endif %}
 
-
 <h2 id="general">General Information</h2>
 
 {% comment %}
@@ -91,7 +88,6 @@ the pitch.
 {% endcomment %}
 <p>
 The <strong>Computing Basics series</strong> uses content from <strong><a href="https://carpentries.org">the Carpentries</a></strong> project to teach basic computing skills to interested members of the Broad community. The Carpentries mission is to teach foundational computational and data science skills to researchers.
-
 
 {% if site.pilot %}
 This is a pilot workshop, testing out a lesson that is still under development. The lesson authors would appreciate any feedback you can give them about the lesson content and suggestions for how it could be further improved.
@@ -120,7 +116,7 @@ LOCATION
 
 This block displays the address and links to maps showing directions
 if the latitude and longitude of the workshop have been set.  You
-can use https://www.latlong.net/ to find the lat/long of an
+can use <https://www.latlong.net/> to find the lat/long of an
 address.
 {% endcomment %}
 {% assign begin_address = page.address | slice: 0, 4 | downcase  %}
@@ -181,7 +177,7 @@ Modify the block below if there are any special requirements.
     Participants must have access to a computer with a
     Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
   {% endif %}
-  They should have a few specific software packages installed (listed <a href="#setup">below</a>).
+  They may need to have a few specific software packages installed (see <a href="#setup">below</a>).
 </p>
 
 {% comment %}
@@ -208,9 +204,9 @@ special instructions.
   attempt to provide them.
 </p>
 {% else %}
-  We are dedicated to providing a positive and accessible learning environment for all. 
-  We do not require participants to provide documentation of disabilities or disclose any unnecessary personal information. 
-  However, we do want to help create an inclusive, accessible experience for all participants. 
+  We are dedicated to providing a positive and accessible learning environment for all.
+  We do not require participants to provide documentation of disabilities or disclose any unnecessary personal information.
+  However, we do want to help create an inclusive, accessible experience for all participants.
   We encourage you to share any information that would be helpful to make your Carpentries experience accessible.
   To request an accommodation for this workshop, please <a href="mailto:cb-admin@broadinstitute.org">email us</a>.
 </p>
@@ -257,11 +253,12 @@ Move the 'endcomment' tag above the beginning of the following
 <p> tag to make this section visible.
 
 Edit the text to match who can attend the workshop. For instance:
+
 - This workshop is open to affiliates to ABC university.
 - This workshop is open to the public.
-- If you are interested in attending this workshop, contact me@example.com
+- If you are interested in attending this workshop, contact <me@example.com>
   for more information.
-  
+
 {% endcomment %}
 <p id="who-can-attend">
     <strong>Who can attend?:</strong>
@@ -280,9 +277,8 @@ Edit the text to match who can attend the workshop. For instance:
   {% else %}
   to-be-announced
   {% endif %}
-  for more information. A larger workshop is planned for Friday June 21, 2024 from 11:30a- 1:30p.
+  for more information. A <a href="https://broadinstitute.github.io/2024-06-21-Unix_Shell/">larger workshop</a> is planned for Friday June 21, 2024 from 11:30a- 1:30p.
 </p>
-
 
 <hr/>
 
@@ -291,13 +287,13 @@ Collaborative Notes
 
 If you want to use an Etherpad, go to
 
-https://pad.carpentries.org/YYYY-MM-DD-site
+<https://pad.carpentries.org/YYYY-MM-DD-site>
 
 where 'YYYY-MM-DD-site' is the identifier for your workshop,
 e.g., '2015-06-10-esu'.
 
 Note we also have a CodiMD (the open-source version of HackMD)
-available at https://codimd.carpentries.org
+available at <https://codimd.carpentries.org>
 {% endcomment %}
 {% if page.collaborative_notes %}
 <h2 id="collaborative_notes">Collaborative Notes</h2>
@@ -307,7 +303,6 @@ We will use this <a href="{{ page.collaborative_notes }}">collaborative document
 </p>
 <hr/>
 {% endif %}
-
 
 {% comment %}
 SURVEYS - DO NOT EDIT SURVEY LINKS
@@ -332,7 +327,6 @@ change the value of `carpentry` to `incubator`.
 {% endif %}
 
 <hr/>
-
 
 {% comment %}
 SCHEDULE
@@ -376,7 +370,7 @@ how one of these schedule tables is constructed.
 {% endcomment %}
 
 {% if site.pilot %}
-The lesson taught in this workshop is being piloted and a precise schedule is yet to be established. The workshop will include regular breaks. Please contact 
+The lesson taught in this workshop is being piloted and a precise schedule is yet to be established. The workshop will include regular breaks. Please contact
   {% if page.email %}
   {% for email in page.email %}
   {% if forloop.last and page.email.size > 1 %}
@@ -394,7 +388,6 @@ The lesson taught in this workshop is being piloted and a precise schedule is ye
 {% endif %}
 
 <hr/>
-
 
 {% comment %}
 SETUP
@@ -431,6 +424,7 @@ please preview your site before committing, and make sure to run
 
 {% comment %}
 For online workshops, the section below provides:
+
 - installation instructions for the Zoom client
 - recommendations for setting up Learners' workspace so they can follow along
   the instructions and the videoconferencing
@@ -455,6 +449,6 @@ during the workshop.
 {% elsif site.carpentry == "lc" %}
 {% include lc/setup.html %}
 {% elsif site.carpentry == "incubator" %}
-Please check <a href = "https://jlchang.github.io/2024-05-09-Unix_Shell_pilot/#terminal-setup">the "Setup" section</a>
+Please check the <a href = "https://jlchang.github.io/2024-05-09-Unix_Shell_pilot/#terminal-setup">"Setup" section</a>
 of the lesson homepage for instructions to obtain the software and data you will need to follow the lesson.
 {% endif %}
