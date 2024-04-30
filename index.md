@@ -359,8 +359,8 @@ of code below the Schedule `<h2>` header below with
 {% elsif site.carpentry == "lc" %}
 {% include lc/schedule.html %}
 {% elsif site.carpentry == "incubator" %}
-This workshop is teaching a modified Carpentries lesson.
-Please check <a href = "{{ site.incubator_lesson_site }}">the lesson homepage</a> for a list of lesson sections and estimated timings.
+This workshop is teaching a modified Carpentries lesson. This pilot workshop will cover about half of the [Introduction to the Command Line for Genomics](https://github.com/datacarpentry/shell-genomics/) lesson content is about an hour.
+Please check <a href = "{{ site.incubator_lesson_site }}">the lesson homepage</a> for a list of lesson sections.
 {% endif %}
 
 {% comment %}
@@ -370,7 +370,7 @@ how one of these schedule tables is constructed.
 {% endcomment %}
 
 {% if site.pilot %}
-The lesson taught in this workshop is being piloted and a precise schedule is yet to be established. The workshop will include regular breaks. Please contact
+The lesson taught in this workshop is being piloted and a precise schedule is yet to be established. Please contact
   {% if page.email %}
   {% for email in page.email %}
   {% if forloop.last and page.email.size > 1 %}
@@ -449,6 +449,6 @@ during the workshop.
 {% elsif site.carpentry == "lc" %}
 {% include lc/setup.html %}
 {% elsif site.carpentry == "incubator" %}
-Please check the <a href = "https://jlchang.github.io/2024-05-09-Unix_Shell_pilot/#terminal-setup">"Setup" section</a>
-of the lesson homepage for instructions to obtain the software and data you will need to follow the lesson.
+Please check the <a href = "https://jlchang.github.io/2024-05-09-Unix_Shell_pilot/#setup">"Setup" section</a>
+of the lesson homepage for instructions to obtain the software and server access you will need to follow the lesson.
 {% endif %}
