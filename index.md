@@ -357,7 +357,7 @@ of code below the Schedule `<h2>` header below with
 {% elsif site.carpentry == "dc" %}
 {% include dc/schedule.html %}
 {% elsif site.carpentry == "lc" %}
-{% include lc/schedule.html %}
+This workshop is teaching a modified Carpentries lesson. Please check the lesson homepage for a list of lesson sections and estimated timings.
 {% elsif site.carpentry == "incubator" %}
 This workshop is teaching a modified Carpentries lesson. This pilot workshop will cover about half of the [Introduction to the Command Line for Genomics](https://datacarpentry.org/shell-genomics/) lesson content in about an hour.
 Please check <a href = "{{ site.incubator_lesson_site }}">the lesson homepage</a> for a list of lesson sections.
